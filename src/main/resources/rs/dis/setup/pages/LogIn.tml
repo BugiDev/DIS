@@ -1,0 +1,72 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>D&amp;S - Admin Strana</title>
+	
+	<!-- CSS for Fluid and Fixed Widths - Double to prevent flickering on change -->
+	<link href="css/fixed.css" rel="stylesheet" media="screen" type="text/css" class="width" />
+	
+	<!-- CSS for Theme Styles - Double to prevent flickering on change -->
+	<link href="css/theme/blue.css" rel="stylesheet" media="screen" type="text/css" class="theme" />
+	
+</head>
+
+<body>
+
+<!-- Start: Page Wrap -->
+<div id="wrap" class="container_24">
+
+	<!-- Header Grid Container: Start -->
+	<div class="login">
+		
+	<!-- Info Notice: Start -->
+	<div class="notice welcome">
+		<p>Dobrodošli na Admin stranu sajta D&amp;S</p>
+	</div>
+	<!-- Info Notice: End -->
+	
+		<!-- Header: Start -->
+		<div id="header">
+				
+			<!-- Logo: Start -->
+			<t:pagelink id="logo" t:page="LogIn" title="D&amp;S - Admin strana"></t:pagelink>
+			<!-- Logo: End -->
+			
+			<!-- Login: Start -->
+			<t:form t:id="login" >
+				<div class="korIme">
+				<!-- Username Input: Start -->
+				<t:label for="userName"  >Korisnicko ime</t:label>
+				<t:textfield t:id="userName" class="password tip-stay validate" title="Unesite Vaše korisnicko ime" />
+				<!-- Username Input: End -->
+				</div>
+                                <div class="korIme">
+				<!-- Password Input: Start -->
+				<t:label for="password">Šifra</t:label>
+				<t:passwordfield t:id="password" class="password tip-stay validate" title="Unesite Vašu šifru"></t:passwordfield>
+				<!-- Password Input: End -->
+				</div>
+                                <div class="korSub">
+				<!-- Login Button: Start -->
+				<t:submit t:id="submit" value="login" class="tip" title="Ulogujte se" />
+				<!-- Login Button: End -->
+				</div>
+			</t:form>
+			<!-- Login: End -->
+			
+		</div>
+		<!-- Header: End -->
+		<div class="notice info">
+		<p>Pritisnite dugme sa desne strane ili pritisnite Enter da biste se ulogovali.</p>
+	</div>
+	</div>
+	<!-- Header Grid Container: End -->
+
+</div>
+<!-- End: Page Wrap -->
+
+</body>
+
+</html>

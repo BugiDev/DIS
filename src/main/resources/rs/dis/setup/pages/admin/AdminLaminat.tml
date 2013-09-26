@@ -1,0 +1,110 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Dodaj novi laminat u proizvode.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+			<t:form t:id="ContactForm"  t:zone="lista">
+						<div>
+                                                <center>
+							<div  class="wrapper">
+								<span><t:label for="naziv"/></span>
+								<t:textfield class="input" t:id="naziv" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="proizvodjac"/></span>
+								<t:textfield class="input" t:id="proizvodjac" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="dimenzije"/></span>
+								<t:textfield class="input" t:id="dimenzije" size="10"/>
+							</div>             
+							<div  class="wrapper">
+								<span><t:label for="tip"/></span>
+								<t:textfield t:id="tip" size="10" />
+							</div>
+                                                        <br/>
+                                                        <div  class="wrapper">
+								<span><t:label for="materijal"/></span>
+								<t:textfield class="input" t:id="materijal" size="10"/>
+							</div>
+                                                        
+							<div  class="wrapper">
+								<span><t:label for="opis"/></span>
+								<t:textfield class="input" t:id="opis" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="cena"/></span>
+								<t:textfield class="input" t:id="cena" size="10"/>
+							</div>
+                                                        <br/>
+                                                        <br/>
+                                                        <t:submit t:id="submit" class="submit" value="Dodajte novi laminat"/>
+                                                        
+                                                </center>
+						</div>
+					</t:form>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Dodaj novi laminat u proizvode.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+                <t:zone t:id="lista" t:update="show">  
+                <t:ProgressiveDisplay t:id="prikaziGrid" t:initial="block:loadingBlock" update="slidedown">
+                <t:grid source="laminatlist" t:rowsPerPage="12" row="laminatGrid" exclude="laminatActive" add="Promeni, Obrisi" >
+                <t:parameter name="promeniCell">
+                        <t:actionlink t:id="promeni" context="laminatGrid.laminatId">Promeni</t:actionlink>
+                    </t:parameter>
+                    <t:parameter name="obrisiCell">
+                        <t:actionlink t:id="obrisi" t:zone="lista" context="laminatGrid.laminatId">Obriši</t:actionlink>
+                    </t:parameter>
+                </t:grid>    
+                </t:ProgressiveDisplay>
+
+                <t:block t:id="loadingBlock">
+ 		<div style="font-weight: bold; text-decoration: blink;">
+	 		Tabela se učitava...
+                        <img src="images/ajax-loader.gif" alt="" />
+ 		</div>
+                </t:block>
+                </t:zone> 
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+</t:borderAdmin>

@@ -1,0 +1,38 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Kategorije izmena</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content">
+		
+		<p class="center">
+			<!-- List of big icons for quicklinks -->
+			<t:pagelink t:page="AdminVrata" class="big_button upload"><span>Dodajte / Izmenite Vrata</span></t:pagelink>
+			<t:pagelink t:page="AdminProzori" class="big_button upload"><span>Dodajte / Izmenite Prozore</span></t:pagelink>
+            <t:pagelink t:page="AdminBpod" class="big_button upload"><span>Dodajte / Izmenite Brodski pod</span></t:pagelink>
+            <t:pagelink t:page="AdminLamperija" class="big_button upload"><span>Dodajte / Izmenite Lamperiju</span></t:pagelink>
+            <t:pagelink t:page="AdminLaminat" class="big_button upload"><span>Dodajte / Izmenite Laminat</span></t:pagelink>
+            <br/>
+            <t:pagelink t:page="AdminVrata" class="big_button add_news"><span style="font-size:12px">Dodajte / Izmenite Ostalu drvnu građu</span></t:pagelink>
+            <t:pagelink t:page="AdminVrata" class="big_button add_news"><span style="font-size:12px">Dodajte / Izmenite Dodatne materijale</span></t:pagelink>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+</t:borderAdmin>

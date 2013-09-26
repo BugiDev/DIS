@@ -1,0 +1,56 @@
+<t:border t:pageTitle="${message:title}"
+        t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+
+	<div class="body3">
+		<div class="main">
+<!-- content -->
+			<article id="contentPart">
+				<div class="wrapper">
+					<h2 class="under">${message:head-main}</h2>
+					<div class="wrapper">
+						<section class="cols">
+							<div class="wrapper pad_bot1">
+								<figure class="left marg_right1"><a href="http://www.seca.at/de.html"><img src="images/seca.png" alt=""/></a></figure>
+								<h6>Seca</h6>
+								<p>${message:text-1}</p>
+							</div>
+							<div class="wrapper">
+								<figure class="left marg_right1"><a href="http://www.lesna-tip.si/index.php?slo"><img src="images/Lesna.png" alt=""/></a></figure>
+								<h6>Lesna</h6>
+								<p>${message:text-2}</p>
+							</div>
+						</section>
+						<section class="cols pad_left1">
+							<div class="wrapper pad_bot1">
+								<figure class="left marg_right1"><a href="http://www.hrastpetkovic.com/index.php"><img src="images/Hrast.png" alt=""/></a></figure>
+								<h6>Hrast</h6>
+								<p>${message:text-3}</p>
+							</div>
+							<div class="wrapper">
+								<figure class="left marg_right1"><a href="http://www.radialr.com/"><img src="images/radial.jpg" alt=""/></a></figure>
+								<h6>Radial</h6>
+								<p>${message:text-4}</p>
+							</div>
+						</section>
+						<section class="cols pad_left1">
+							<div class="wrapper pad_bot1">
+								<figure class="left marg_right1"><a href="http://www.hasslacher.at/en.html"><img src="images/Hasslacher.gif" alt=""/></a></figure>
+								<h6>Hasslacher</h6>
+								<p>${message:text-5}</p>
+							</div>
+							<div class="wrapper">
+								<figure class="left marg_right1"><a href="http://www.jelovica.rs/"><img src="images/logo-jelovica.jpg" alt=""/></a></figure>
+								<h6>Jelovica</h6>
+								<p>${message:text-6}</p>
+							</div>
+						</section>
+					</div>
+				</div>
+
+			</article>
+		</div>
+	</div>
+		</t:border>

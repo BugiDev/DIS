@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Author: Mateja Opačić -->
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD//EN"
+   "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost/disbaza</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">paparaco16</property>
+
+		<property name="connection.pool_size">5</property>
+        <!-- <property name="hbm2ddl.auto">create</property>-->
+
+		<!-- Print SQL to stdout. -->
+		<property name="show_sql">false</property>
+		<property name="format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+		<property name="generate_statistics">true</property>
+
+		<property name="hibernate.transaction.flush_before_completion">true</property>
+
+		<!-- Mapping files -->
+                 <mapping class="rs.dis.setup.entities.Korisnik"/>
+		 <mapping class="rs.dis.setup.entities.Vrata"/>
+                 <mapping class="rs.dis.setup.entities.Prozori"/>
+                 <mapping class="rs.dis.setup.entities.Laminat"/>
+                 <mapping class="rs.dis.setup.entities.Lamperija"/>
+                 <mapping class="rs.dis.setup.entities.Bpod"/>
+                 <mapping class="rs.dis.setup.entities.OstalaDG"/>
+                 <mapping class="rs.dis.setup.entities.DodatniMAT"/>
+	</session-factory>
+	
+</hibernate-configuration>

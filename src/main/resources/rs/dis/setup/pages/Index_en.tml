@@ -1,0 +1,191 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+<head>
+<title>Welcome!!!</title>
+<meta charset="utf-8"/>
+
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+	<style type="text/css">
+		.bg{ behavior: url(js/PIE.htc); }
+	</style>
+  <![endif]-->
+	<!--[if lt IE 7]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
+		</div>
+	<![endif]-->
+</head>
+<body id="page1" >
+<div class="body1">
+	<div class="body2">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+				<h1><t:pagelink t:page="Index" id="logo" title="Home page!"></t:pagelink></h1>
+				<nav>
+					<ul id="menu">
+						<li id="nav1" class="active"><t:pagelink t:page="Index">Home<span>page</span></t:pagelink></li>
+						<li id="nav2"><t:pagelink t:page="Reference">Our<span>references</span></t:pagelink></li>
+						<li id="nav3"><t:pagelink t:page="Partneri">Our<span>partners</span></t:pagelink></li>
+						<li id="nav4"><t:pagelink t:page="Asortiman">Product<span>portfolio</span></t:pagelink></li>
+						<li id="nav5"><t:pagelink t:page="Kontakt">Contact<span>page</span></t:pagelink></li>
+					</ul>
+				</nav>
+				</div>
+                                <div id="promenaLokala">
+                                <img src="images/arrowLeft.png" style="width: 64px; height: 64px;"/>
+                                <br/>
+                                Ovde možete promeniti jezik!
+                                </div>
+                <div id="lokal">
+                <a t:type="actionlink" t:id="localeSr"><img src="images/RS.png" title="Pogledajte sajt na Srpskom"/></a>
+               	<br/>
+                <br/>
+                <a t:type="actionlink" t:id="localeEn"><img src="images/EN.png" title="This site on English"/></a>
+                </div>
+				<div class="wrapper">
+					<div class="slider">
+					  <ul class="items">
+						<li><img src="images/Slide1.png" alt="" /></li>
+						<li><img src="images/Slide2.png" alt="" /></li>
+						<li><img src="images/Slide3.png" alt="" /></li>
+					  </ul>
+					</div>
+				</div>
+			</header>
+<!-- header end-->
+		</div>
+	</div>
+	</div>
+	<div class="body3">
+		<div class="main">
+<!-- content -->
+			<article id="content">
+				<div class="wrapper">
+					<section class="cols">
+						<h3><span class="dropcap">A</span>Our<span>references</span></h3>
+						<p class="pad_bot1">Here you can see all the previous jobs that have been successfully finished.</p>
+						<t:pagelink t:page="Reference" class="link1">Read more...</t:pagelink>
+					</section>
+					<section class="cols pad_left1">
+						<h3><span class="dropcap">B</span>Our<span>partners</span></h3>
+						<p class="pad_bot1">For many years we have successfully worked with major domestic and foreign companies. Some of them are Lesna, Leitinger, Jelovica ...</p>
+						<t:pagelink t:page="Partneri" class="link1">Read more...</t:pagelink>
+					</section>
+					<section class="cols pad_left1">
+						<h3><span class="dropcap">C</span>Product<span>portfolio</span></h3>
+						<p class="pad_bot1">Our company is engaged in the sale and installation of the best carpentry and woodwork products in the region. In a varied assortment you will find doors, windows, laminate flooring, decking...</p>
+						<t:pagelink t:page="Asortiman" class="link1">Read more...</t:pagelink>
+					</section>
+					<section class="cols pad_left1">
+						<h3><span class="dropcap">D</span>Contact<span>page</span></h3>
+						<p class="pad_bot1">If you have any questions or maybe an attractive business proposition, do not hesitate. Contact us ...</p>
+						<t:pagelink t:page="Kontakt" class="link1">Read more...</t:pagelink>
+					</section>
+				</div>
+				<div class="wrapper">
+					<section class="col1">
+						<h2 class="under">Big New Year's discount!</h2>
+						<div class="wrapper">
+							<figure class="left marg_right1"><img src="images/drvce.jpg" alt="" /></figure>
+							<p class="pad_bot1">Since we are facing a season of Christmas and New Year holidays, we decided to treat you. From 15 December until 15 January, all our customers receive a 10% discount.</p>
+							<p> What do you say to stop the tradition of buying annoying gifts and treat your spouse the new woodwork that lasts for years ...</p>
+						</div>
+					</section>
+					<section class="col2 pad_left1">
+						<h2>News!</h2>
+						<div class="testimonials">
+						<div id="testimonials">
+						  <ul>
+							<li>
+								<div>
+									“A great pleasure is to inform you that our company introduced a ISO standard 9001.”
+								</div>
+								<span><strong class="color1">Snežana Begović</strong> <br/>
+								Director</span>
+							</li>
+							<li>
+								<div>
+									“Leitinger has released a new range of flooring, and the first one to have it on sale is, of course, D&amp;S.”
+								</div>
+								<span><strong class="color1">Leitinger</strong> <br/>
+								Director</span>
+							</li>
+							<li>
+								<div>
+									“Completed another big deal. Hayat hotel now has a completely new wooden indoors.”
+								</div>
+								<span><strong class="color1">Snežana Begović</strong> <br/>
+								Director</span>
+							</li>
+						  </ul>
+						</div>
+						<a href="#" class="up"></a>
+						<a href="#" class="down"></a>
+						</div>
+					</section>
+                                                <section class="col1">
+						<div class="wrapper">
+							<t:zone t:id="pretplataEmail" id="pretplataEmail" update="show">
+                                        
+                                        </t:zone>
+                                        
+                                        <t:block t:id="emailSetovanTrue">
+                                        <div style="font-weight: bold; text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px;  text-align: center;" >
+                                        ${mailSetTrue}
+                                        </div>
+                                        </t:block>
+                                        <t:block t:id="emailSetovanFalse">
+                                        <div style="font-weight: bold; text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px;  text-align: center;" >
+                                        ${mailSetTrue}
+                                        </div>
+                                        </t:block>
+						</div>
+					</section>
+				</div>
+			</article>
+		</div>
+	</div>
+	<div class="body4">
+		<div class="main">
+			<article id="content2">
+				<div class="wrapper">
+					<section class="col3">
+						<h4>Why exactly us?</h4>
+						<ul class="list1">
+							<li>The best quality</li>
+							<li>The biggest product portfolio</li>
+							<li>The fastest delivery</li>
+							<li>The best service</li>
+						</ul>
+					</section>
+					<section class="col3 pad_left2">
+						<h4>Address</h4>
+						<ul class="address">
+							<li><span>City:</span>Kragujevac</li>
+							<li><span>Address:</span>Kneza Miloša 125</li>
+							<li><span>Phone:</span>+381-34-311-656</li>
+							<li><span>Email:</span><a href="mailto:dislesna@open.telekom.rs">dislesna@open.telekom.rs</a></li>
+						</ul>
+					</section>
+					<section class="col2 right">
+						<h4>Follow our work!</h4>
+						<t:form t:id="newsletter" t:zone="pretplataEmail"  t:autofocus="false">
+							<div>
+								<div class="wrapper">
+									<t:textfield class="input" t:id="newsEmail"  size="10"/>
+								</div>
+								<t:submit t:id="submit" class="submit" value="${message:submit}" />
+							</div>
+						</t:form>
+					</section>
+				</div>
+			</article>
+<!-- content end -->
+		</div>
+	</div>
+		<div class="main">
+		</div>
+</body>
+</html>

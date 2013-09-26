@@ -1,0 +1,27 @@
+<t:border t:pageTitle="${message:title}"
+        t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+<div class="body3">
+            
+		<div class="main">
+                    <article id="content">
+				<div class="wrapper">
+<div class="containter">
+	<t:ProgressiveDisplay t:id="prikaziGrid"  t:initial="block:loadingBlock" update="slidedown">
+                <t:grid source="ostalaDGlist" t:rowsPerPage="12" row="ostalaDGGrid" exclude="ostalaDGActive" ></t:grid>
+            </t:ProgressiveDisplay>
+<t:block t:id="loadingBlock">
+ 		<div style="font-weight: bold; text-decoration: blink;">
+	 		${message:initial}
+                        <img src="images/ajax-loader.gif" alt="" />
+ 		</div>
+ 	</t:block>
+<br/>
+        <t:pagelink t:page="Asortiman" class="return">${message:return}</t:pagelink>
+</div>
+</div>
+</article>
+</div>
+</div>
+	</t:border>

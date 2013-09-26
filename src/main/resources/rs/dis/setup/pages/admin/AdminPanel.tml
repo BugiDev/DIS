@@ -1,0 +1,32 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Kategorije izmena</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content">
+		
+		<p class="center">
+			<!-- List of big icons for quicklinks -->
+			<t:pagelink class="big_button upload" t:page="AdminProizvodi"><span>Dodajte / Izmenite Proizvode</span></t:pagelink>
+			<t:pagelink class="big_button add_user" t:page="AdminKorisnik"><span>Dodajte / Izmenite Administratore</span></t:pagelink>
+                        <t:pagelink class="big_button new_pm" t:page="AdminEmail"><span>Pošalji email pretplatnicima</span></t:pagelink>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+</t:borderAdmin>

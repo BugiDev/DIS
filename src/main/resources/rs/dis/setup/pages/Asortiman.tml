@@ -1,0 +1,67 @@
+<t:border t:pageTitle="${message:title}"
+        t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+	<div class="body3">
+            
+		<div class="main">
+<!-- content -->
+			<article id="content">
+				<div class="wrapper">
+					<section class="cols">
+						<div class="wrapper pad_bot2">
+							<h3><span class="dropcap">1</span><t:pagelink t:page="AsortVrata">${message:head-1}</t:pagelink></h3>
+							<figure><img src="images/Vrata.png" alt=""/></figure>
+							<p class="pad_bot1">${message:text-1}</p>
+							<t:pagelink t:page="AsortVrata" class="link1">${message:read}</t:pagelink>
+						</div>
+						<div class="wrapper pad_bot2">
+							<h3><span class="dropcap">4</span><t:pagelink t:page="AsortLamperija">${message:head-2}</t:pagelink></h3>
+							<figure><img src="images/Lamperija.jpg" alt=""/></figure>
+							<p class="pad_bot1">${message:text-2}</p>
+							<t:pagelink t:page="AsortLamperija" class="link1">${message:read}</t:pagelink>
+						</div>
+					</section>
+					<section class="cols pad_left1">
+						<div class="wrapper pad_bot2">
+							<h3><span class="dropcap">2</span><t:pagelink t:page="AsortProzori">${message:head-3}</t:pagelink></h3>
+							<figure><img src="images/prozor.jpg" alt=""/></figure>
+							<p class="pad_bot1">${message:text-3}</p>
+							<t:pagelink t:page="AsortProzori" class="link1">${message:read}</t:pagelink>
+						</div>
+						<div class="wrapper">
+							<h3><span class="dropcap">5</span><t:pagelink t:page="AsortLaminat">${message:head-4}</t:pagelink></h3>
+							<figure><img src="images/Laminat.jpg" alt=""/></figure>
+							<p class="pad_bot1">${message:text-4}</p>
+							<t:pagelink t:page="AsortLaminat" class="link1">${message:read}</t:pagelink>
+						</div>
+					</section>
+					<section class="cols pad_left1">
+						<div class="wrapper pad_bot2">
+							<h3><span class="dropcap">3</span><t:pagelink t:page="AsortBpod">${message:head-5}</t:pagelink></h3>
+							<figure><img src="images/Brodski pod.jpg" alt=""/></figure>
+							<p class="pad_bot1">${message:text-5}</p>
+							<t:pagelink t:page="AsortBpod" class="link1">${message:read}</t:pagelink>
+						</div>
+						<div class="wrapper">
+							<h3><span class="dropcap">6</span><t:pagelink t:page="AsortOstalaDG">${message:head-6}</t:pagelink></h3>
+							<figure><img src="images/ostalo.jpg" alt=""/></figure>
+							<p class="pad_bot1">${message:text-6}</p>
+							<t:pagelink t:page="AsortOstalaDG" class="link1">${message:read}</t:pagelink>
+						</div>  
+					</section >
+                    <section class="cols" style="margin-left:60px;">
+						<div class="wrapper pad_bot2">
+							<h3><span class="dropcap">7</span><t:pagelink t:page="AsortDodatniMAT">${message:head-7}</t:pagelink></h3>
+							<figure><img src="images/lak.jpg" alt=""/></figure>
+							<p class="pad_bot1">${message:text-7}</p>
+							<t:pagelink t:page="AsortDodatniMAT" class="link1">${message:read}</t:pagelink>
+						</div>
+					</section>
+				</div>
+
+			</article>
+		</div>
+	</div>
+	</t:border>

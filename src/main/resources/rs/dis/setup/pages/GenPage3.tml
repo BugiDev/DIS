@@ -1,0 +1,47 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Promenite podatke administratora ${ime}.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+			<t:form t:id="ContactForm">
+						<div>
+                                                <center>
+							<div  class="wrapper">
+								<span><t:label for="ime"/></span>
+								<t:textfield class="input" t:id="ime" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="pass"/></span>
+								<t:textfield class="input" t:id="pass" size="10"/>
+							</div>
+                                                        <br/>
+                                                        <br/>
+                                                        <t:submit t:id="submit" class="submit" value="Sačuvajte promene"/>
+                                                        
+                                                </center>
+						</div>
+					</t:form>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+
+</t:borderAdmin>

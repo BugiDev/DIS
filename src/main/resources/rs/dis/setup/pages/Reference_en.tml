@@ -1,0 +1,56 @@
+<t:border t:pageTitle="${message:title}"
+    t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+
+	<div class="body3">
+		<div class="main">
+<!-- content -->
+			<article id="content">
+				<div class="wrapper tabs">
+					<div class="tab-content" id="tab1">
+						<h5><span class="dropcap"><strong>15</strong><span>11</span></span>Representative of Fiat in Belgrade</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/Fiat.png" alt=""/></figure>
+							<p class="pad_bot1">The building at the Macedonian street in Belgrade is finally complete. We made new, highest quality and most modern carpentry and woodwork, which is by all standards agreed with the strict regulations imposed by a big company like Fiat. Representatives of Fiat in Belgrade are very happy and now its premises shows professionalism and quality that Fiat deserves.</p>
+						</div>
+						<h5><span class="dropcap"><strong>03</strong><span>10</span></span>Fiat factory in Kragujevac</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/Fiat.png" alt=""/></figure>
+							<p class="pad_bot1">Director of the Fiat factory in Kragujevac, Giovanni De Filippis about our work in his factory, said: "I am extremely pleased with the appearance, design and quality of woodwork that is now located in our offices. Now we can present the seriousness of our company in the best way we can and we believe that the new environment will be much more pleasant for work."</p>
+						</div>
+						<h5><span class="dropcap"><strong>21</strong><span>09</span></span>Residential Complex Colony Kragujevac.</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/apt-complex.jpg" alt=""/></figure>
+							<p class="pad_bot1">
+At the spot where once stood the old workers' colony, is now built a completely new housing complex. It was built in six residential buildings that are fully equipped with our windows and woodwork. We had set up highest quality doors, windows with double glazing and doors which has speciall security systems. Tenants will now be able to enjoy their homes, in a real family atmosphere.</p>
+						</div>
+					</div>
+					<div class="tab-content" id="tab2">
+
+						<h5><span class="dropcap"><strong>13</strong><span>08</span></span>Residential building in Karađorđeva street.</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/apartment-building-location.jpg" alt=""/></figure>
+							<p class="pad_bot1">We are pleased to announce that work on the residential building in the Krađorđeva street in Kragujevac is finished. One of the oldest buildings in Kragujevac was fully restored, with the newest woodwork in a style that favors such a heritage. The building was returned to its old glory and the first impressions are really encouraging.</p>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="selected"><a href="#tab1">1</a></li>
+						<li><a href="#tab2">2</a></li>
+					<!--	<li><a href="#tab3">3</a></li>
+						<li><a href="#tab4">4</a></li>
+						<li><a href="#tab5">5</a></li>
+						<li><a href="#tab6">6</a></li>-->
+					</ul>
+				</div>
+
+			</article>
+		</div>
+	</div>
+<script>
+	jQuery(document).ready(function() {
+		tabs.init();
+	})
+</script>
+	</t:border>

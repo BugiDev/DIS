@@ -1,0 +1,70 @@
+<t:border t:pageTitle="${message:title}"
+        t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+
+	<div class="body3">
+		<div class="main">
+<!-- content -->
+			<article id="contentCont">
+				<div class="wrapper">
+					<section class="col1">
+						<h2 class="under">${message:head1}</h2>
+						<t:form t:id="ContactForm"  t:zone="poslatEmail">
+						<div>
+							<div  class="wrapper">
+								<span><t:label for="name"/></span>
+								<t:textfield class="input" t:id="name" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="company"/></span>
+								<t:textfield class="input" t:id="company" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="foreignEmail"/></span>
+								<t:textfield class="input" t:id="foreignEmail" size="10"/>
+							</div>
+							<div  class="textarea_box">
+								<span><t:label for="text"/></span>
+								<t:textarea t:id="text" size="10" row="8"/>
+							</div>
+                                                        <t:submit t:id="submit" class="submit" value="${message:submit}"/>
+                                                        <a t:type="actionlink" t:id="reset">${message:reset}</a>
+						</div>
+					</t:form>
+					</section>
+					<section class="col2 pad_left1">
+						<h2 class="under">${message:head2}</h2>
+						<div id="address"><span>${message:head-opt-1}<br/>
+								${message:head-opt-2}<br/>
+								${message:head-opt-3}<br/>
+								Email:</span>
+								Kragujevac<br/>
+								Knez Mihajlova 125<br/>
+								+381-34-311-656<br/>
+								<a href="mailto:dislesna@open.telekom.rs" class="color2">dislesna@open.telekom.rs</a></div>
+						<div id="mapa">
+                                                </div>
+					</section>
+                                        <section class="col2 pad_left1">
+                                        <t:zone t:id="poslatEmail" id="poslatEmail" update="show">
+                                        
+                                        </t:zone>
+                                        </section>
+                                        <t:block t:id="emailBlockTrue">
+                                        <div style="font-weight: bold; text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px" >
+                                        ${poslatoTrue}
+                                        </div>
+                                        </t:block>
+                                        <t:block t:id="emailBlockFalse">
+                                        <div style="font-weight: bold; text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px" >
+                                        ${poslatoFalse}
+                                        </div>
+                                        </t:block>
+				</div>
+
+			</article>
+		</div>
+	</div>
+		</t:border>

@@ -1,0 +1,88 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Dodaj novog administratora.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+			<t:form t:id="ContactForm"  t:zone="lista">
+						<div>
+                                                <center>
+							<div  class="wrapper">
+								<span><t:label for="ime"/></span>
+								<t:textfield class="input" t:id="ime" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="pass"/></span>
+								<t:textfield class="input" t:id="pass" size="10"/>
+							</div>
+                                                        <br/>
+                                                        <br/>
+                                                        <t:submit t:id="submit" class="submit" value="Dodajte novog administratora"/>
+                                                        
+                                                </center>
+						</div>
+					</t:form>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Dodaj novog administratora.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+                <t:zone t:id="lista" t:update="show">  
+                <t:ProgressiveDisplay t:id="prikaziGrid" t:initial="block:loadingBlock" update="slidedown">
+                <t:grid source="korisniklist" t:rowsPerPage="12" row="korisnikGrid" add="Promeni, Obrisi" >
+                <t:parameter name="promeniCell">
+                        <t:actionlink t:id="promeni" context="korisnikGrid.korisnikId">Promeni</t:actionlink>
+                    </t:parameter>
+                    <t:parameter name="obrisiCell">
+                        <t:actionlink t:id="obrisi" t:zone="lista" context="korisnikGrid.korisnikId">Obriši</t:actionlink>
+                    </t:parameter>
+                </t:grid>    
+                </t:ProgressiveDisplay>
+
+                <t:block t:id="loadingBlock">
+ 		<div style="font-weight: bold; text-decoration: blink;">
+	 		Tabela se učitava...
+                        <img src="images/ajax-loader.gif" alt="" />
+ 		</div>
+                </t:block>
+                </t:zone> 
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+</t:borderAdmin>

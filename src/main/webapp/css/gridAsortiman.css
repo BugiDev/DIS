@@ -1,0 +1,53 @@
+/* 
+    Document   : greedAsortiman
+    Created on : Mar 19, 2012, 8:45:58 PM
+    Author     : Bogdan Begovic
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+div.t-data-grid			{ font-family: Arial, Helvetica, sans-serif; font-size: 9px;  }
+div.t-data-grid-pager a, div.t-data-grid-pager span.current	
+	{ font-size: 13px; }
+table.t-data-grid th	{ width: 130px; background-color:#60b000; text-align: center; }
+table.t-data-grid th a	{ text-decoration: none; text-align: center; }
+table.t-data-grid thead tr th{ text-align: center; }
+table.t-data-grid tbody tr	{ text-align: center; }
+table.t-data-grid tbody tr:hover	{ background-color: #eeeeee; }
+
+table.t-data-grid tbody tr td.Promeni {text-align: center;}
+table.t-data-grid tbody tr td.Obrisi {text-align: center;}
+
+table.t-data-grid thead tr th.vrataTip{ width: 100px; }
+table.t-data-grid thead tr th.vrataDimenzije{ width: 100px; }
+table.t-data-grid thead tr th.vrataMaterijal{ width: 100px; }
+
+table.t-data-grid thead tr th.prozoriTip{ width: 100px; }
+table.t-data-grid thead tr th.prozoriDimenzije{ width: 100px; }
+table.t-data-grid thead tr th.prozoriMaterijal{ width: 100px; }
+
+
+table.t-data-grid thead tr th.laminatTip{ width: 100px; }
+table.t-data-grid thead tr th.laminatDimenzije{ width: 100px; }
+table.t-data-grid thead tr th.laminatMaterijal{ width: 100px; }
+
+
+table.t-data-grid thead tr th.lamperijaTip{ width: 100px; }
+table.t-data-grid thead tr th.lamperijaDimenzije{ width: 100px; }
+table.t-data-grid thead tr th.lamperijaMaterijal{ width: 100px; }
+
+
+table.t-data-grid thead tr th.bpodTip{ width: 100px; }
+table.t-data-grid thead tr th.bpodDimenzije{ width: 100px; }
+table.t-data-grid thead tr th.bpodMaterijal{ width: 100px; }
+div.t-data-grid-pager span.current{background-color:#60b000;}
+.containter {height: 50%;}

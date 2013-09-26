@@ -1,0 +1,125 @@
+
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+<head>
+<title>${pagetitle}</title>
+<meta charset="utf-8"/>
+  <!--[if lt IE 9]>
+  	<script type="text/javascript" src="js/html5.js"></script>
+	<style type="text/css">
+		.bg{ behavior: url(js/PIE.htc); }
+	</style>
+  <![endif]-->
+	<!--[if lt IE 7]>
+		<div style=' clear: both; text-align:center; position: relative;'>
+			<a href="http://www.microsoft.com/windows/internet-explorer/default.aspx?ocid=ie6_countdown_bannercode"><img src="http://www.theie6countdown.com/images/upgrade.jpg" border="0"  alt="" /></a>
+		</div>
+	<![endif]-->
+
+</head>
+<body id="${tipStrane}">
+	<div class="body1">
+	<div class="body2">
+	<div class="body5">
+		<div class="main">
+<!-- header -->
+			<header>
+				<div class="wrapper">
+				<h1><t:pagelink t:page="Index" id="logo" title="${message:logo}"></t:pagelink></h1>
+				<nav>
+					<ul id="menu">
+						<li id="nav1" class="${active1}"><t:pagelink t:page="Index">${message:nav1}<span>${message:nav1.2}</span></t:pagelink></li>
+						<li id="nav2" class="${active2}"><t:pagelink t:page="Reference">${message:nav2}<span>${message:nav2.2}</span></t:pagelink></li>
+						<li id="nav3" class="${active3}"><t:pagelink t:page="Partneri">${message:nav3}<span>${message:nav3.2}</span></t:pagelink></li>
+						<li id="nav4" class="${active4}"><t:pagelink t:page="Asortiman">${message:nav4}<span>${message:nav4.2}</span></t:pagelink></li>
+						<li id="nav5" class="${active5}"><t:pagelink t:page="Kontakt">${message:nav5}<span>${message:nav5.2}</span></t:pagelink></li>
+					</ul>
+				</nav>
+				</div>
+                                <t:if t:test="testJezika">
+                                <div id="promenaLokala">
+                                <img src="images/arrowLeftBot.png" style="width: 64px; height: 64px;"/>
+                                <br/>
+                                You can change language here!
+                                </div>
+                                <t:parameter t:name="else">
+                                <div id="promenaLokala">
+                                <img src="images/arrowLeft.png" style="width: 64px; height: 64px;"/>
+                                <br/>
+                                Ovde možete promeniti jezik!
+                                </div>
+                                </t:parameter>
+                                </t:if>
+                <div id="lokal">
+                <a t:type="actionlink" t:id="localeRs"><img src="images/RS.png" title="Pogledajte sajt na Srpskom"/></a>
+               	<br/>
+                <br/>
+                <a t:type="actionlink" t:id="localeEn"><img src="images/EN.png" title="This site on English"/></a>
+                </div>
+			</header>
+<!-- header end-->
+		</div>
+	</div>
+	</div>
+	</div>
+	<t:body />
+<section class="col1">
+        <div class="wrapper">
+							<t:zone t:id="pretplataEmail" id="pretplataEmail" update="show">
+                                        
+                                        </t:zone>
+                                        
+                                        <t:block t:id="emailSetovanTrue">
+                                        <div style="font-weight: bold; text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px;  text-align: center;" >
+                                        ${mailSetTrue}
+                                        </div>
+                                        </t:block>
+                                        <t:block t:id="emailSetovanFalse">
+                                        <div style="font-weight: bold; text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px;  text-align: center;" >
+                                        ${mailSetTrue}
+                                        </div>
+                                        </t:block>
+						</div>
+</section>
+	<div class="body4">
+		<div class="main">
+			<article id="content2">
+				<div class="wrapper">
+					<section class="col3">
+						<h4>${message:foot-head-1}</h4>
+						<ul class="list1">
+							<li>${message:foot-opt-1.1}</li>
+							<li>${message:foot-opt-1.2}</li>
+							<li>${message:foot-opt-1.3}</li>
+							<li>${message:foot-opt-1.4}</li>
+						</ul>
+					</section>
+					<section class="col3 pad_left2">
+						<h4>${message:foot-head-2}</h4>
+						<ul class="address">
+							<li><span>${message:foot-opt-2.1}</span>Kragujevac</li>
+							<li><span>${message:foot-opt-2.2}</span>Knez Mihajlova 125</li>
+							<li><span>${message:foot-opt-2.3}</span>+381-34-311-656</li>
+							<li><span>Email:</span><a href="mailto:dislesna@open.telekom.rs">dislesna@open.telekom.rs</a></li>
+						</ul>
+					</section>
+					<section class="col2 right">
+						<h4>${message:foot-head-3}</h4>
+						<t:form t:id="newsletter" t:zone="pretplataEmail" t:autofocus="false">
+							<div>
+								<div class="wrapper">
+									<t:textfield class="input"  t:id="newsEmail"  size="10"  />
+								</div>
+								<t:submit t:id="submit" class="submit" value="${message:submit}"/>
+							</div>
+						</t:form>
+					</section>
+				</div>
+			</article>
+<!-- content end -->
+		</div>
+	</div>
+		<div class="main">
+		</div>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<t:border t:pageTitle="${message:title}"
+    t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+
+	<div class="body3">
+		<div class="main">
+<!-- content -->
+			<article id="content">
+				<div class="wrapper tabs">
+					<div class="tab-content" id="tab1">
+						<h5><span class="dropcap"><strong>15</strong><span>11</span></span>Predstavništvo Fiata u Beogradu</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/Fiat.png" alt=""/></figure>
+							<p class="pad_bot1">Zgrada u Makedonskoj ulici u Beograda je napokon završena. Urađena je potuno nova, najkvalitetnija i najmodernija stolarija i drvenarija, koja se po svim standardima slaže sa striktnim propisima koje nalaže jedna velika kompanija kao što je Fiat. Predstavnici Fiata u Beogradu su prezadovoljni i sada njihove prostorije odišu profesionalnošću i kvalitetom kakvim Fiat zaslužuje.</p>
+						</div>
+						<h5><span class="dropcap"><strong>03</strong><span>10</span></span>Sedište fabrike Fiat u Kragujevcu</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/Fiat.png" alt=""/></figure>
+							<p class="pad_bot1">Direktor fabrike Fiat u Kragujevcu Đovani de Filipis je o našem radu u njegovoj fabrici rekao: "Izuzetno sam zadovoljan izgledom, dizajnom i kvalitetom stolarije koja se sada nalazi u našim kancelarijama. Sada na najbolji način možemo predstaviti ozbiljnost naše kompanije i verujemo da će sada radno okruženje biti mnogo prijatnije za rad."</p>
+						</div>
+						<h5><span class="dropcap"><strong>21</strong><span>09</span></span>Stambeni kompleks Kolonija Kragujevac</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/apt-complex.jpg" alt=""/></figure>
+							<p class="pad_bot1">Na mestu gde se nekada nalazila stara radnička kolonija, sada je podignut kompletno novi stambeni kompleks. Izgrađeno je 6 stambenih objekata koji su u potpunosti opremljeni našom stolarijom i drvenarijom. Postavljena su najkvalitetnija uvozna vrata, prozori sa duplim staklima i ulazna vrata koja imaju specijane sigurnosne sisteme. Stanari će sada moći da uživaju u svojim domovima, u pravoj porodičnoj atmosferi.</p>
+						</div>
+					</div>
+					<div class="tab-content" id="tab2">
+
+						<h5><span class="dropcap"><strong>13</strong><span>08</span></span>Stambeni objekat u Karađorđevoj ulici.</h5>
+						<div class="wrapper pad_bot2">
+							<figure class="left marg_right1"><img src="images/apartment-building-location.jpg" alt=""/></figure>
+							<p class="pad_bot1">Sa zadovoljstvom Vas obaveštavamo da su radovi na stabmenom objektu u Krađorđevoj ulici u Kragujevcu privedeni kraju. Jedna od najstarijih zgrada u Kragujevcu je potuno restaurirana, sa potuno novom drvenarijom u stilu koji pogoduje ovakvoj kulturnoj baštini. Zgradi je vraćen stari sjaj a prvi utisci su zaista ohrabrujući.</p>
+						</div>
+					</div>
+					<ul class="nav">
+						<li class="selected"><a href="#tab1">1</a></li>
+						<li><a href="#tab2">2</a></li>
+					<!--	<li><a href="#tab3">3</a></li>
+						<li><a href="#tab4">4</a></li>
+						<li><a href="#tab5">5</a></li>
+						<li><a href="#tab6">6</a></li>-->
+					</ul>
+				</div>
+
+			</article>
+		</div>
+	</div>
+<script>
+	jQuery(document).ready(function() {
+		tabs.init();
+	})
+</script>
+	</t:border>

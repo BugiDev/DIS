@@ -1,0 +1,51 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Pošalji email svim pretplaćenim adresama.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+			<t:form t:id="ContactForm"  t:zone="poslatEmail">
+						<div>
+							<div  class="textarea_box">
+								<span><t:label for="text"/></span>
+								<t:textarea t:id="text" size="10" row="8"/>
+							</div>
+                                                        <t:submit t:id="submit"  class="submit hover" value="${message:submit}"/>
+                                                        <a t:type="actionlink" t:id="reset" class="submit hover">${message:reset}</a>
+						</div>
+                                        
+					</t:form>
+                                        <t:zone t:id="poslatEmail" id="poslatEmail" update="show">
+                                        </t:zone>
+                                        <t:block t:id="emailBlockTrue">
+                                        <div style=" text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px; text-align: center; font-size: 16px; margin-top: 20px" >
+                                        ${poslatoTrue}
+                                        </div>
+                                        </t:block>
+                                        <t:block t:id="emailBlockFalse">
+                                        <div style=" text-decoration: none; ${bojaSlanja} color:#fff; border: 2px solid #eee; padding: 15px; text-align: center; font-size: 16px; margin-top: 20px" >
+                                        ${poslatoFalse}
+                                        </div>
+                                        </t:block>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+</t:borderAdmin>

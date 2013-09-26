@@ -1,0 +1,175 @@
+<html xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd">
+
+
+<head>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>${pagetitle}</title>
+	
+	<!-- Imports General CSS and jQuery CSS -->
+	<link href="css/screen.css" rel="stylesheet" media="screen" type="text/css" />
+	
+	<!-- CSS for Fluid and Fixed Widths - Double to prevent flickering on change -->
+	<link href="css/fixed.css" rel="stylesheet" media="screen" type="text/css" class="width" />
+	
+	<!-- CSS for Theme Styles - Double to prevent flickering on change -->
+	<link href="css/theme/blue.css" rel="stylesheet" media="screen" type="text/css" class="theme" />
+	
+</head>
+
+<body>
+
+<!-- Start: Page Wrap -->
+<div id="wrap" class="container_24">
+	
+	
+	<!-- Header Grid Container: Start -->
+	<div class="grid_24">
+		
+		<!-- User Panel: Start -->
+		<div id="userpanel">
+			
+			<!-- Style (Themes) Switcher: Start -->
+			<ul id="user" class="dropdown right">
+				<li class="topnav">
+					<t:pagelink class="top icon user" t:page="Index">${asoKorisnik.korisnikIme}</t:pagelink>
+					
+					<!-- Style (Themes) Switcher Content: Start -->
+					<ul class="subnav">  
+			            <li><t:actionlink t:id="Logout" class="icon lock">Izlogujte se</t:actionlink></li>
+			        </ul>  
+			        <!-- Style (Themes) Switcher Content: End -->
+				</li>
+			</ul>
+			<!-- Style Switcher: End -->
+			
+		</div>
+		<!-- User Panel: End -->
+		
+		<!-- Header: Start -->
+		<div id="header">
+				
+			<!-- Logo: Start -->
+			<t:pagelink t:page="AdminPanel" id="logo" title="Admin panel">D&amp;S - Admin Panel</t:pagelink>
+			<!-- Logo: End -->
+			
+			<!-- Navigation: Start -->
+			<ul id="navigation" class="dropdown">
+				<li><t:pagelink class="home ${active1}" t:page="AdminPanel">Admin panel</t:pagelink></li>
+				
+				<!-- Navigation Dropdown Menu Item: Start -->
+				<li class="topnav">
+					<t:pagelink class="blocks ${active2}" t:page="AdminProizvodi">Proizvodi</t:pagelink>
+					
+					<!-- Navigation Dropdown Menu Item Content: Start -->
+					<ul class="subnav">
+						<li><t:pagelink t:page="AdminVrata" class="icon blocks">Vrata</t:pagelink></li>  
+			            <li><t:pagelink t:page="AdminProzori" class="icon blocks">Prozori</t:pagelink></li>  
+			            <li><t:pagelink t:page="AdminBpod" class="icon blocks">Brodski pod</t:pagelink></li> 
+			            <li><t:pagelink t:page="AdminLamperija" class="icon blocks">Lamperija</t:pagelink></li>  
+			            <li><t:pagelink t:page="AdminLaminat" class="icon blocks">Laminat</t:pagelink></li>  
+			            <li><t:pagelink t:page="AdminOstalaDG" class="icon blocks">Ostala drvna građa</t:pagelink></li>  
+			            <li><t:pagelink t:page="AdminDodatniMAT" class="icon blocks">Dodatni materijali</t:pagelink></li>  
+			        </ul>  
+			        <!-- Navigation Dropdown Menu Item Content: End --> 
+				</li>
+				<!-- Navigation Dropdown Menu Item: End -->
+				
+                                <li><t:pagelink class="chatbubbles ${active4}" t:page="AdminEmail">Pošalji email</t:pagelink></li>
+				<!-- Navigation Menu Item: Start -->
+				<li><t:pagelink class="users ${active3}" t:page="AdminKorisnik">Administratori</t:pagelink></li>
+				<!-- Navigation Menu Item: End -->
+                                
+			</ul>
+			<!-- Navigation: End -->
+			
+		</div>
+		<!-- Header: End -->
+		
+		<!-- Breadcrumb Bar: Start -->
+		<div id="breadcrumb">
+			
+			<!-- Breadcrumb: Start -->
+			<ul class="left">
+				<t:if t:test="testAdminPanel">
+                                <t:PartAdminPanel></t:PartAdminPanel>
+                                </t:if>
+                                <t:if t:test="testAdminProizvodi">
+                                <t:PartAdminProizvodi></t:PartAdminProizvodi>
+                                </t:if>
+                                <t:if t:test="testAdminAdmini">
+                                <t:PartAdminAdmini></t:PartAdminAdmini>
+                                </t:if>
+                                <t:if t:test="testAdminEmail">
+                                <t:PartAdminEmail></t:PartAdminEmail>
+                                </t:if>
+                                 <t:if t:test="testAdminVrata">
+                                <t:PartAdminVrata></t:PartAdminVrata>
+                                </t:if>
+                                 <t:if t:test="testAdminProzori">
+                                <t:PartAdminProzori></t:PartAdminProzori>
+                                </t:if>
+                                 <t:if t:test="testAdminBpod">
+                                <t:PartAdminBpod></t:PartAdminBpod>
+                                </t:if>
+                                 <t:if t:test="testAdminLaminat">
+                                <t:PartAdminLaminat></t:PartAdminLaminat>
+                                </t:if>
+                                 <t:if t:test="testAdminLamperija">
+                                <t:PartAdminLamperija></t:PartAdminLamperija>
+                                </t:if>
+                                 <t:if t:test="testAdminOstalaDG">
+                                <t:PartAdminOstalaDG></t:PartAdminOstalaDG>
+                                </t:if>
+                                 <t:if t:test="testAdminDodatniMAT">
+                                <t:PartAdminDodatniMAT></t:PartAdminDodatniMAT>
+                                </t:if>
+			</ul>
+			<!-- Breadcrumb: End -->
+			
+			<!-- Breadcrumb Icon Links: Start -->
+			<ul class="right">
+				<li><t:pagelink class="icon home tip" title="Admin panel" t:page="AdminPanel">Admin panel</t:pagelink></li>
+			</ul>
+			<!-- Breadcrumb Icon Links: End -->
+			
+		</div>
+		<!-- Breadcrumb Bar: End -->
+		
+	</div>
+	<!-- Header Grid Container: End -->
+
+<t:body />
+
+<!-- Footer Grid: Start -->
+<div class="grid_24">
+
+	<!-- Footer: Start -->
+	<div id="footer">
+		
+		<p class="left">
+			Copyright &#169; 2011 <a href="#">D&amp;S Lesna D.O.O.</a>. 
+			Designed by <a href="mailto:bogdanbegovic@hotmail.com">Bogdan Begović Bugi</a>.
+		</p>
+		
+		<!-- Footer Icon Navigation: Start -->
+		<ul class="right">
+			<li><t:pagelink t:page="AdminProizvodi" class="icon blocks tip" title="Proizvodi">Proizvodi</t:pagelink></li>
+			<li><t:pagelink t:page="AdminKorisnik" class="icon users tip" title="Administratori">Administratori</t:pagelink></li>
+                        <li><t:pagelink t:page="AdminEmail" class="icon chatbubbles tip" title="Pošalji email">Pošalji emali</t:pagelink></li>
+			<li><t:pagelink t:page="AdminPanel" class="icon home tip active" title="Admin panel">Admin panel</t:pagelink></li>
+		</ul>
+		<!--Footer Icon Navigation: End -->
+		
+	</div>
+	<!-- Footer: End -->
+	
+</div>
+<!-- Footer Grid: End -->
+
+</div>
+<!-- End: Page Wrap -->
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<t:border t:pageTitle="${message:title}"
+        t:tipStrane="${message:tip-Strane}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx"
+        xmlns:p="tapestry:parameter">
+    
+
+    
+<div class="body3">
+            
+		<div class="main">
+                    <article id="content">
+				<div class="wrapper">
+
+<div class="containter">
+                <t:progressiveDisplay t:id="prikaziGrid" t:initial="block:loadingBlock" update="slidedown">
+                
+                </t:progressiveDisplay>
+<t:block t:id="loadingBlock">
+ 		<div style="font-weight: bold; text-decoration: blink;">
+	 		${message:initial}
+                        <img src="images/ajax-loader.gif" alt="" />
+ 		</div>
+ 	</t:block>
+    
+<t:block t:id="gridBlock">
+    <t:grid source="vratalist" t:rowsPerPage="12" row="vrataGrid" exclude="vrataActive, vrataURL" add="Slika" >
+                    <p:slikaCell>
+                        <a href="${vrataGrid.vrataURL}" rel="lightbox" title="${vrataGrid.vrataNaziv}"><img src="images/picTmb.png"/></a>
+                    </p:slikaCell>
+                </t:grid>
+</t:block>
+    
+<br/>
+        <t:pagelink t:page="Asortiman" class="return">${message:return}</t:pagelink>
+</div>
+</div>
+</article>
+</div>
+</div>
+    
+	</t:border>

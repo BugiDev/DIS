@@ -1,0 +1,73 @@
+<t:borderAdmin t:pageTitle="${message:title}"
+	xmlns:t="http://tapestry.apache.org/schema/tapestry_5_1_0.xsd"
+        xmlns:tx="tapestry-library:tapx">
+
+<!-- 100% Box Grid Container: Start -->
+<div class="grid_24">
+	
+	<!-- Box Header: Start -->
+	<div class="box_top">
+		
+		<h2 class="icon time">Izmenite podatke proizvoda.</h2>
+		
+	</div>
+	<!-- Box Header: End -->
+	
+	<!-- Box Content: Start -->
+	<div class="box_content padding">
+		
+		<p class="center">
+			<t:form t:id="ContactForm" >
+						<div>
+                                                <center>
+							<div  class="wrapper">
+								<span><t:label for="naziv"/></span>
+								<t:textfield class="input" t:id="naziv" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="proizvodjac"/></span>
+								<t:textfield class="input" t:id="proizvodjac" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="dimenzije"/></span>
+								<t:textfield class="input" t:id="dimenzije" size="10"/>
+							</div>             
+							<div  class="wrapper">
+								<span><t:label for="tip"/></span>
+								<t:textfield t:id="tip" size="10" />
+							</div>
+                                                        <br/>
+                                                        <div  class="wrapper">
+								<span><t:label for="vrsta"/></span>
+								<t:textfield class="input" t:id="vrsta" size="10"/>
+							</div>
+                                                        <div  class="wrapper">
+								<span><t:label for="materijal"/></span>
+								<t:textfield class="input" t:id="materijal" size="10"/>
+							</div>
+                                                        
+							<div  class="wrapper">
+								<span><t:label for="opis"/></span>
+								<t:textfield class="input" t:id="opis" size="10"/>
+							</div>
+							<div  class="wrapper">
+								<span><t:label for="cena"/></span>
+								<t:textfield class="input" t:id="cena" size="10"/>
+							</div>
+                                                        <br/>
+                                                        <br/>
+                                                        <t:submit t:id="submit" class="submit" value="Sačuvajte promene"/>
+                                                        
+                                                </center>
+						</div>
+					</t:form>
+		</p>
+		
+	</div>
+	<!-- Box Content: End -->
+	
+</div>
+<!-- 100% Box Grid Container: End -->
+
+
+</t:borderAdmin>
